@@ -7,9 +7,6 @@ function showMenu(){
 	setTimeout("$('.menu').find('.rotateOut').removeClass('rotateOut').css('opacity', '0');",400);
 	setTimeout("$('.menu').find('.rotateIn').removeClass('rotateIn').css('opacity', '1');",400);
 	$('.fir_menu').slideDown(300);
-	$(document.body).css({
-		"overflow-y": "hidden"
-	});
 }
 function hideMenu(){
 	$('.menu').children('.hide').addClass('rotateOut').css('z-index', '1');
@@ -17,9 +14,6 @@ function hideMenu(){
 	setTimeout("$('.menu').find('.rotateOut').removeClass('rotateOut').css('opacity', '0');",400);
 	setTimeout("$('.menu').find('.rotateIn').removeClass('rotateIn').css('opacity', '1');",400);
 	$('.fir_menu').slideUp(300);
-	$(document.body).css({
-		"overflow-y": "auto"
-	});
 }
 
 $('.fir_item').click(function() {
